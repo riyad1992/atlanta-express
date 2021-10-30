@@ -8,7 +8,7 @@ const UpdateBooking = () => {
   const [isUpdate, setIsUpdated] = useState(null);
   const [booking, setBooking] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/allBooking/${id}`)
+    fetch(`https://stark-oasis-22274.herokuapp.com/allBooking/${id}`)
       .then((res) => res.json())
       .then((data) => setBooking(data));
   }, [id, isUpdate]);

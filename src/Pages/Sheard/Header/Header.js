@@ -29,19 +29,18 @@ const Header = () => {
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#tour">Tours</Nav.Link>
                         {
-                            user?.email ?<Nav.Link  as={Link} to="/mybooking">My booking</Nav.Link>:''
+                            user?.email ?<Nav.Link style={{fontSize:'14px'}} as={Link} to="/mybooking">My booking</Nav.Link>:''
                         }
                         {
-                            user?.email ?<Nav.Link  as={Link} to="/allbooking">Manage all booking</Nav.Link>:''
+                            user?.email ?<Nav.Link style={{fontSize:'14px'}} as={Link} to="/allbooking">Manage all booking</Nav.Link>:''
                         }
                         {
-                            user?.email ?<Nav.Link  as={Link} to="/addservice">Add New Service</Nav.Link>:''
+                            user?.email ?<Nav.Link style={{fontSize:'14px'}} as={Link} to="/addservice">Add New Service</Nav.Link>:''
                         }
                         {user?.email ?
                             <Nav.Link  onClick={logOut} variant="light">Logout</Nav.Link> :
                             <Nav.Link  as={Link} to="/login">Login</Nav.Link>}
-                        <Navbar.Text className='text-warning'>
-                            Signed in as: <a className='text-info' href="#login">{user?.displayName}</a>
+                        <Navbar.Text className='text-warning'><i className="fas fa-user-plus"></i> <a className='text-info' style={{fontSize:'14px'}} href="#login">{user?.displayName}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
                 </Container>

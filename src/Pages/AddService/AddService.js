@@ -1,14 +1,16 @@
 import React, { useRef } from 'react';
 
 const AddService = () => {
+    const imgRef = useRef()
     const nameRef = useRef();
     const discriptionRef = useRef();
 
     const handleAddUser = e => {
+        const img = imgRef.current.value;
         const name = nameRef.current.value;
         const discription = discriptionRef.current.value;
 
-        const newService = { name, discription };
+        const newService = { name, discription, img };
 
         fetch('https://stark-oasis-22274.herokuapp.com/services', {
             method: 'POST',
@@ -30,6 +32,7 @@ const AddService = () => {
         <div>
             <h2>Please Add an User</h2>
             <form onSubmit={handleAddUser}>
+                <input type="text" ref={imgRef} />
                 <input type="text" ref={nameRef} />
                 <input type="text" name="" id="" ref={discriptionRef} />
                 <input type="submit" value="Add" />
