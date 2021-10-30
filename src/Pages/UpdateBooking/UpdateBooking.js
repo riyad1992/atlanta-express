@@ -20,7 +20,7 @@ const UpdateBooking = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    fetch(`http://localhost:5000/update/${id}`, {
+    fetch(`https://stark-oasis-22274.herokuapp.com/update/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),
@@ -33,7 +33,6 @@ const UpdateBooking = () => {
           setIsUpdated(false);
         }
       });
-    console.log(data);
   };
 
     return (
