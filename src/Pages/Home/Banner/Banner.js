@@ -15,8 +15,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Travel With The Best</h3>
+                        <p>Prepare for the unexpected with a Travel Guard travel insurance plan from Atlanta Express Travel. In these extraordinary times, protecting your trip</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -27,8 +27,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>We Provide Best Tour Guide</h3>
+                        <p>The best tour guides bring a destination to life with their passion, ... “We like to take visitors through the hutongs, historic lanes that.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -39,8 +39,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>First Class Buses</h3>
+                        <p>First Class Bus Tours and Travel Services. Small Enough TO CARE FOR YOU... Yet Big Enough TO SERVE YOU! </p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

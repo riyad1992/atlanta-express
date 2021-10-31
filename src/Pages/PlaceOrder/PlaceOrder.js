@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Col } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAute from '../../hooks/useAute';
 import './PlaceOrder.css'
@@ -19,7 +18,8 @@ const PlaceOrder = () => {
   const handleAddToBooking = (service) => {
     const data = service;
     data.email = user?.email
-    data.personName = user?.displayName
+    data.personName = user?.displayName;
+    data.status = 'pending'
     fetch(`https://stark-oasis-22274.herokuapp.com/addBooking`, {
       method: "POST",
       headers: { "content-type": "application/json" },

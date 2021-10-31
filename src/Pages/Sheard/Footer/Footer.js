@@ -4,7 +4,7 @@ import logo from '../../../images/atlanta-logo.png'
 const Footer = () => {
     return (
         <div className='bg-info p-4'>
-            <div className='container'>
+            <div className='container text-start'>
                 <div className='row'>
                     <div className='col-12 col-md-4 d-flex'>
                         <img src={logo} alt='' style={{height:'50px'}}/>
@@ -13,9 +13,15 @@ const Footer = () => {
                     <div className='col-12 col-md-4'>
                         <h2>Travel Specialist</h2>
                         <ul>
-                            <li>FirstClass Buses</li>
+                            <li>First Class Buses</li>
                             <li>Best Tour Guide</li>
                             <li>High experience Driver</li>
+                        </ul>
+                        <ul className='d-flex justifiy-content-center'>
+                            <li><i className="fab fa-facebook-square me-2"></i></li>
+                            <li><i className="fab fa-instagram-square me-2"></i></li>
+                            <li><i className="fab fa-twitter-square me-2"></i></li>
+                            <li><i className="fab fa-linkedin me-2"></i></li>
                         </ul>
                     </div>
                     <div className='col-12 col-md-4'>
