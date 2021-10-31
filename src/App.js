@@ -12,6 +12,7 @@ import AllBooking from './Pages/AllBooking/AllBooking';
 import Footer from './Pages/Sheard/Footer/Footer';
 import AddService from './Pages/AddService/AddService';
 import UpdateBooking from './Pages/UpdateBooking/UpdateBooking';
+import UpdatePending from './Pages/UpdatePending/UpdatePending';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path='/update/:id'>
               <UpdateBooking></UpdateBooking>
+            </PrivateRoute>
+            <PrivateRoute path='/updatePending/:id'>
+              <UpdatePending></UpdatePending>
             </PrivateRoute>
             <Route path='/login'>
               <Login></Login>
