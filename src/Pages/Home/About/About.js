@@ -4,7 +4,8 @@ import banner from '../../../images/about.jpg'
 const About = () => {
     return (
         <div className='container'>
-            <h1>About Us</h1>
+            <h1 className='mb-0'>About Us</h1>
+            <hr className='w-25 mx-auto bg-danger mb-4 mt-0'/>
             <div className='row'>
                 <div className='col-12 col-md-6 p-4'><img src={banner} alt='' style={{width:'100%', borderRadius:'20px'}}/>
 

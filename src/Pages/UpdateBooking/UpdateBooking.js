@@ -36,7 +36,7 @@ const UpdateBooking = () => {
   };
 
     return (
-        <div>
+        <div className='myBooking py-5'>
       <h1>Updated Name: {booking.name}</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input

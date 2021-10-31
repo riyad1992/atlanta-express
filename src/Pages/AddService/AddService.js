@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import './AddService.css'
 
 const AddService = () => {
     const imgRef = useRef()
@@ -29,13 +30,16 @@ const AddService = () => {
         e.preventDefault();
     }
     return (
-        <div>
+        <div className='addService'>
             <h2>Please Add an User</h2>
-            <form onSubmit={handleAddUser}>
-                <input type="text" ref={imgRef} />
-                <input type="text" ref={nameRef} />
-                <input type="text" name="" id="" ref={discriptionRef} />
-                <input type="submit" value="Add" />
+            <form className='form-area' onSubmit={handleAddUser}>
+                <input type="text" ref={imgRef} placeholder='Image URL'/>
+                <br/>
+                <input type="text" placeholder='Service Name' ref={nameRef} />
+                <br/>
+                <input type="text" placeholder='Service Details' name="" id="" ref={discriptionRef} />
+                <br/>
+                <input className='btn btn-warning' type="submit" value="Add Service" />
             </form>
         </div>
     );

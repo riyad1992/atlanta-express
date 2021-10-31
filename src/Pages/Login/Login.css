@@ -1,5 +1,5 @@
 .login{
-    background-image: url('../../images/bus.jfif');
+    background-image: url('../../images/login.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,5 +9,5 @@
     width: 300px;
     padding: 5px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(201, 189, 189);
 }

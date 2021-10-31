@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Col } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAute from '../../hooks/useAute';
+import './PlaceOrder.css'
 
 
 const PlaceOrder = () => {
@@ -35,16 +37,11 @@ const PlaceOrder = () => {
   };
 
     return (
-        <div>
-            <h1>This is Place order</h1>
-            <p>Travel Route:{service.name}</p>
-            <p>{service.discription}</p>
-            <button
-                  onClick={() => handleAddToBooking(service)}
-                  className="btn btn-warning m-2"
-                >
-                  Confrime Booking
-                </button>
+        <div className='placeOrder'>
+            <div className=''>
+              <h2 className=' pt-5'>Your Travel Route : {service.name}</h2>
+              <button onClick={() => handleAddToBooking(service)} className="btn btn-warning m-2 mt-5">Confirm Booking</button>
+            </div>
         </div>
     );
 };

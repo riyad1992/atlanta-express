@@ -33,11 +33,11 @@ const AllBooking = () => {
 
 
     return (
-        <div>
+        <div className='myBooking py-5'>
             <h2>Here is All Bookings</h2>
             <ul>
                 {
-                    allBookings.map(booking => <li key={booking._id}>{booking.name} <Link to={`/update/${booking._id}`}><button>update</button></Link> <button onClick={() => handleDeleteUser(booking._id)}>X</button></li>)
+                    allBookings.map(booking => <li key={booking._id}>Travel Route: {booking.name} <Link to={`/update/${booking._id}`}><button>update</button></Link> <button onClick={() => handleDeleteUser(booking._id)}>Delete</button></li>)
                 }
             </ul>
         </div>

@@ -3,7 +3,7 @@ import logo from '../../../images/atlanta-logo.png'
 
 const Footer = () => {
     return (
-        <div className='bg-info my-5 p-4'>
+        <div className='bg-info p-4'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-12 col-md-4 d-flex'>
